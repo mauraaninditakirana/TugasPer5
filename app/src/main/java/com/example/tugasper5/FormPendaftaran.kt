@@ -66,4 +66,12 @@ fun FormulirPendaftaran(modifier: Modifier = Modifier) {
             )
 
         }
+        Card(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(dimensionResource(R.dimen.padding_medium)),
+            shape = MaterialTheme.shapes.medium,
+            elevation = CardDefaults.cardElevation(defaultElevation = 8.dp),
+            colors = CardDefaults.cardColors(containerColor = Color.White)
+        ){}
 }
