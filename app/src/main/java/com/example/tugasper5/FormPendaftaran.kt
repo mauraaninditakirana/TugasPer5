@@ -48,5 +48,22 @@ fun FormulirPendaftaran(modifier: Modifier = Modifier) {
             .fillMaxSize()
             .background(Color(0xFFF6E6FF))
             .verticalScroll(rememberScrollState())
-    )
+    ){
+        Box(
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(100.dp)
+                .background(Color(0xFFB56BFF))
+                .padding(16.dp),
+            contentAlignment = Alignment.BottomStart
+        ) {
+            Text(
+                text = "Formulir Pendaftaran",
+                color = Color.White,
+                fontSize = 28.sp,
+                //fontWeight = FontWeight.Bold,
+                modifier = Modifier.padding(start = 16.dp)
+            )
+
+        }
 }
