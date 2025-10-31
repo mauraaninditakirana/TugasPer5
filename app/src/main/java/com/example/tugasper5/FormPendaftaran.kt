@@ -48,7 +48,7 @@ fun FormulirPendaftaran(modifier: Modifier = Modifier) {
             .fillMaxSize()
             .background(Color(0xFFF6E6FF))
             .verticalScroll(rememberScrollState())
-    ){
+    ) {
         Box(
             modifier = Modifier
                 .fillMaxWidth()
@@ -73,7 +73,7 @@ fun FormulirPendaftaran(modifier: Modifier = Modifier) {
             shape = MaterialTheme.shapes.medium,
             elevation = CardDefaults.cardElevation(defaultElevation = 8.dp),
             colors = CardDefaults.cardColors(containerColor = Color.White)
-        ){
+        ) {
             Column(
                 modifier = Modifier
                     .padding(dimensionResource(R.dimen.padding_medium))
@@ -88,6 +88,20 @@ fun FormulirPendaftaran(modifier: Modifier = Modifier) {
                     singleLine = true,
                     modifier = Modifier.fillMaxWidth()
                 )
+                Spacer(modifier = Modifier.height(16.dp)) // Jarak antar elemen
 
+                // Bagian pilihan jenis kelamin
+                Text("JENIS KELAMIN", fontWeight = FontWeight.SemiBold)
+                jenisList.forEach { item ->
+                    Row(verticalAlignment = Alignment.CenterVertically) {
+                        RadioButton(
+                            selected = jenisKelamin == item,
+                            onClick = { jenisKelamin = item }
+                        )
+                        Text(item)
+                    }
+                }
             }
+        }
+    }
 }
