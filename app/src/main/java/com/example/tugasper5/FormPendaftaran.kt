@@ -131,7 +131,7 @@ fun FormulirPendaftaran(modifier: Modifier = Modifier) {
                     modifier = Modifier
                         .fillMaxWidth()
                         .height(50.dp),
-                    colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF8A2BE2))
+                    colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF000080))
                 ){
                     Text(stringResource(R.string.submit), color = Color.White)
                 }
