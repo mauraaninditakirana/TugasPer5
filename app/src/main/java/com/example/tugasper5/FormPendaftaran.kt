@@ -73,5 +73,21 @@ fun FormulirPendaftaran(modifier: Modifier = Modifier) {
             shape = MaterialTheme.shapes.medium,
             elevation = CardDefaults.cardElevation(defaultElevation = 8.dp),
             colors = CardDefaults.cardColors(containerColor = Color.White)
-        ){}
+        ){
+            Column(
+                modifier = Modifier
+                    .padding(dimensionResource(R.dimen.padding_medium))
+            ) {
+                // Bagian input nama lengkap
+                Text("NAMA LENGKAP", fontWeight = FontWeight.SemiBold)
+                OutlinedTextField(
+                    value = nama,
+                    onValueChange = { nama = it },
+                    label = { Text("Nama Lengkap") },
+                    placeholder = { Text("Isian nama lengkap") },
+                    singleLine = true,
+                    modifier = Modifier.fillMaxWidth()
+                )
+
+            }
 }
