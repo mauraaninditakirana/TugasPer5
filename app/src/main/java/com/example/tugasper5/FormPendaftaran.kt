@@ -101,7 +101,7 @@ fun FormulirPendaftaran(modifier: Modifier = Modifier) {
                         Text(item)
                     }
                 }
-                Spacer(modifier = Modifier.height(16.dp)) // Tambahan untuk spasi
+                Spacer(modifier = Modifier.height(16.dp))
 
                 // Bagian pilihan status perkawinan
                 Text("STATUS PERKAWINAN", fontWeight = FontWeight.SemiBold)
@@ -114,6 +114,17 @@ fun FormulirPendaftaran(modifier: Modifier = Modifier) {
                         Text(item)
                     }
                 }
+                Spacer(modifier = Modifier.height(16.dp))
+                // input alamat
+                Text("ALAMAT", fontWeight = FontWeight.SemiBold)
+                OutlinedTextField(
+                    value = alamat,
+                    onValueChange = { alamat = it },
+                    label = { Text("Alamat") },
+                    placeholder = { Text("Isian Alamat") },
+                    modifier = Modifier.fillMaxWidth()
+                )
+
 
             }
         }
