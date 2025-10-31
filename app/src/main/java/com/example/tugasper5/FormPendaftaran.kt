@@ -126,6 +126,14 @@ fun FormulirPendaftaran(modifier: Modifier = Modifier) {
                 )
                 Spacer(modifier = Modifier.height(24.dp))
 
+                Button(
+                    onClick = { },
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .height(50.dp),
+                    colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF8A2BE2))
+                ){}
+
             }
         }
     }
