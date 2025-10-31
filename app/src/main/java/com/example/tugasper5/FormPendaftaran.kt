@@ -101,6 +101,20 @@ fun FormulirPendaftaran(modifier: Modifier = Modifier) {
                         Text(item)
                     }
                 }
+                Spacer(modifier = Modifier.height(16.dp)) // Tambahan untuk spasi
+
+                // Bagian pilihan status perkawinan
+                Text("STATUS PERKAWINAN", fontWeight = FontWeight.SemiBold)
+                statusList.forEach { item ->
+                    Row(verticalAlignment = Alignment.CenterVertically) {
+                        RadioButton(
+                            selected = status == item,
+                            onClick = { status = item }
+                        )
+                        Text(item)
+                    }
+                }
+
             }
         }
     }
