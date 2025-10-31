@@ -34,3 +34,9 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
 @Composable
+fun FormulirPendaftaran(modifier: Modifier = Modifier) {
+    var nama by remember { mutableStateOf("") }
+    var alamat by remember { mutableStateOf("") }
+    var jenisKelamin by remember { mutableStateOf("") }
+    var status by remember { mutableStateOf("") }
+}
