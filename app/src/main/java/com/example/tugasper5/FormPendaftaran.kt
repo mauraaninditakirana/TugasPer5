@@ -42,4 +42,11 @@ fun FormulirPendaftaran(modifier: Modifier = Modifier) {
 
     val jenisList = listOf("Laki-laki", "Perempuan")
     val statusList = listOf("Janda", "Lajang", "Duda")
+
+    Column(
+        modifier = modifier
+            .fillMaxSize()
+            .background(Color(0xFFF6E6FF))
+            .verticalScroll(rememberScrollState())
+    )
 }
